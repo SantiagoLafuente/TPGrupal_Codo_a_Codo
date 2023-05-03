@@ -1,0 +1,32 @@
+body{
+    margin: 0%;
+}
+
+li{
+    display: inline-block;
+    background-color: aqua;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 10%;
+}
+li:hover{
+    background-color: brown;
+}
+ul{
+    display: block;
+    background-color: blueviolet;
+    width: 100%;
+}
+nav{
+    display: inline-block;
+    background-color: rgba(230, 14, 14, 0.5);
+    width: 100%;
+    position: static;
+    top: 0%;
+    left: 50%;
+}
+header{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
