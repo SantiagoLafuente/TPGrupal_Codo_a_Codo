@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Shadows+Into+Light&display=swap');
+
+body{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+/*###############################################################################*/
+main{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.formulario{
+	width: 150%;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+	margin: 5px;
+}
+form{
+    font-family: 'Shadows Into Light', cursive;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 15px;
+}
+input[type="text"], input[type="email"]{
+	border-radius: 5px;
+	border: 3px solid darkgray;
+	text-align: center;
+	font-size: 15px;
+	margin: 10px;
+	height: 25px;
+	width: auto;
+}
+
+label{
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 25px;
+}
+textarea{
+	border-radius: 5px;
+	border: 3px solid darkgray;
+	font-size: 15px;
+    height: auto;
+    width: 100%;
+	margin: 10px;
+}
+.submit{
+	border-radius: 5px;
+	border: 3px solid darkgray;
+	font-size: 15px;
+	margin: 10px;
+	height: 30px;
+	transition: all 0.4s ease;
+}
+.submit:hover{
+	border: 3px solid black;
+	background-color: rgb(200, 200, 200);
+}
+
+.okay{
+	display: none;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+}
+.check{
+	height: 50px;
+	width: 50px;
+}
+
+/*#######################################################################*/
+article{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+	margin-right: 5px;
+	width: 100%;
+}
+
+.form_send{
+	padding: 5px;
+	font-family: "Arial";
+	font-size: 10px;
+}
+
+/*#######################################################################*/
+.ul_article{
+    justify-content: center;
+	font-family: 'Shadows Into Light';
+}
+.li_article{
+	display: table;
+    list-style: none;
+    margin: 2px;
+    padding: 5px;
+}
+
+.iconos{
+	display: table-cell;
+	vertical-align: middle;
+	height: 50px;
+	margin: 10px;
+}
+a{
+	display: table-cell;
+	vertical-align: middle;
+    outline: none;
+    text-decoration-line: none;
+	font-size: 30px;
+	color: white;
+}
+@media (max-width: 767px) {
+    main {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+	.formulario{
+		margin: 0%;
+		padding: 0%;
+		width: 100%;
+	}
+	.okey{
+		height: 10vh;
+		margin: 0%;
+		padding: 0%;
+	}
+	article{
+		margin-top: 5px;
+		padding: 0%;
+	}
+	.ul_article{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.iconos{
+		height: 30px;
+	}
+	a{
+		font-size: 14px;
+	}
+  }

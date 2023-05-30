@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/formulario.css">
+	<link rel="stylesheet" href="../CSS/header.css">
+    <title>Contacto</title>
+</head>
+<body>
+	<div class="nav">
+        <div class="nav__container container">
+            <a class="link" href="../../index.html">Inicio</a>
+            <a class="link" href="../html/nosotros.html">Sobre Nosotros</a>
+            <a class="link" href="../html/productos.html">Productos</a>
+            <a class="link" href="../html/formulario.html">Contacto</a>
+        </div>
+    </div>
+    <main>
+        <div class="formulario">
+            <form id="formulario">
+                <label for="name">Nombre/s: <input type="text" id="nombre" placeholder="Juan" name="nombre"></label>
+                <label for="name">Apellido/s: <input type="text" id="apellido" placeholder="Perez" name="apellido"></label>
+                <label for="name">Email: <input type="email" id="email" placeholder="juanperez@gmail.com" name="email"></label>
+                <label for="name">Numero de contacto: <input type="text" id="numero" placeholder="+54 1166665555" name="numero"></label>
+                <label for="name">Asunto: <input type="text" id="asunto" placeholder="asunto" name="asunto"></label>
+                <label for="name">Contenido: <textarea name="contenido" id="contenido" placeholder="Introduce tu Peticion aqui..." cols="30" rows="10"></textarea></label>
+                <button class="submit" type="submit">Enviar</button>
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+            <div class="okay" id="okay">
+				<img src="./assets/img/iconos/check.png" class="check">
+				<p class="form_send">Tu formulario ya fue enviado</p>
+			</div>
+			
+        </div>
+		<article>
+			<ul class="ul_article">
+				<li class="li_article"><img src="../img/iconos/facebook.png" class="iconos"><a href="https://www.facebook.com/coldplay/?locale=es_LA">Facebook</a></li>
+				<li class="li_article"><img src="../img/iconos/instagram.png" class="iconos"><a href="https://www.instagram.com/coldplay/">Instagram</a></li>
+				<li class="li_article"><img src="..img/iconos/twitter.png" class="iconos"><a href="https://twitter.com/coldplay">Twitter</a></li>
+				<li class="li_article"><img src="../img/iconos/youtube.png" class="iconos"><a href="https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw">Youtube</a></li>
+			</ul>
+		</article>
+    </main>
+	<script type="text/javascript" src="../js/fomulario.js"></script>
+    <script src="https://sheetdb.io/handlebars.js"></script>
+</body>
+</html>

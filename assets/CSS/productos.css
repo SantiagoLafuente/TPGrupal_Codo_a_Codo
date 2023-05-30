@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Shadows+Into+Light&display=swap');
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+	background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+/* NAV */
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header{
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+.header__main{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header__text{
+    width: 45%;
+    
+}
+
+.header__title{
+    font-size: 7rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.header__link{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 50vh;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.header__img{
+    width: 45%;
+    margin: 0;
+    text-align: center;
+}
+
+.header__picture{
+    max-width: 90%;
+}
+
+/*-----------------------------MAIN--------------------------*/
+
+.productos{
+	display: flex;
+	justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3rem;
+}
+.container_tarjeta{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+.tarjeta{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    background-color: white;
+    font-family: 'Shadows Into Light', cursive;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    margin: 15px;
+    height: auto;
+    width: 240px;
+}
+.container_agregar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0% 0% 15px 15px;
+	border-top: 2px solid darkgrey;
+    height: 60px;
+    width: 100%;
+}
+.container_agregar:hover{
+	color: darkgray;
+	cursor: pointer;
+}
+.detalle{
+	margin: 7px;
+}
+.agregar{
+    font-family: 'Shadows Into Light', cursive;
+	font-weight: bold;
+	font-size: 18px;
+}
+img{
+	border-radius: 10% 10% 0% 0%;
+	width: 100%;
+}
+.filtro{
+    display: none;
+}
+/*---------------------------Carrito-----------------------------*/
+.container_carrito{
+	display: inline-block;
+	margin: 0%;
+	padding: 0%;
+	text-align: right;
+	position: sticky;
+	top: 80%;
+	float: right;
+}
+.button_carrito{
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.6);
+	transition: all 0.7s;
+	border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+	height: 40px;
+	width: 40px;
+	justify-content: center;
+	margin: 20px;
+	cursor: pointer;
+}
+.carrito{
+	align-self: center;
+	justify-content: center;
+	height: 20px;
+	width: 20px;
+}
+.button_carrito:hover{
+	background-color: white;
+	box-shadow: 10px rgba(255, 255, 255, 0.5);
+}
+.contador{
+	display: inline-block;
+	border: 1px solid rgba(255, 255, 255, 0);
+	padding: 1px;
+	text-align: center;
+	background-color: rgba(255, 0, 0, 0.95);
+	border-radius: 30%;
+	transition: all 0.5s ease;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 15px;
+	height: 18px;
+	min-width: 18px;
+	max-width: 30px;
+}
+.button_carrito:hover .contador{
+	background-color: rgba(255, 0, 0, 0.95);
+	border-radius: 45%;
+	box-shadow: 3px rgba(255, 0, 0, 0.5);
+}
+.contador p{
+	margin: 0%;
+	padding: 0%;
+	color: white;
+	font-family: 'Arial';
+	font-size: 15px;
+}
+/*----------------------Ventana emergente-----------------------*/
+
+.container_ventana{
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	aling-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	margin: auto;
+	height: 100%;
+	width: 100%;
+}
+.ventana{
+	position: fixed;
+	top: 10%;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.9);
+	overflow-y: scroll;
+	margin: auto 20px;
+	min-height: 40vh;
+	max-height: 80vh;
+	width: auto;
+}
+.salir{
+	display: flex;
+	justify-content: right;
+	border-weight: 3px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0);
+	margin: 10px;
+	padding: 5px;
+	width: 15px;
+}
+.salir:hover{
+	cursor: pointer;
+	border-radius: 10px;
+	border-weight: 3px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.2);
+	margin: 10px;
+	padding: 5px;
+}
+.listado{
+	justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 15px;
+}
+.eliminar{
+	display: inline-block;
+	z-index: 1;
+	border-radius: 50%;
+	float: right;
+	margin: 0%;
+	height: 19px;
+	width: 19px;
+}
+.eliminar:hover{
+	height: 21px;
+	width: 21px;
+}
+
+form{
+    font-family: 'Shadows Into Light', cursive;
+	font-weight: bold;
+	font-size: 20px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-color: darkgrey;
+	margin: 15px;
+}
+
+.lista{
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-height: 912){
+	.listado{
+		font-size: 14px;
+	}
+	form{
+		font-size: 14px;
+	}
+}
+/*---------------------Boton hacia arriba---------------------*/
+
+.container_button{
+	visibility: hidden;
+	display: block;
+	height: 40px;
+	position: fixed;
+	bottom: 20px;
+	right: 13px;
+}
+.button_up{
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.6);
+	transition: all 0.7s;
+	border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+	height: 40px;
+	width: 40px;
+	justify-content: center;
+	margin: 7px;
+	cursor: pointer;
+}
+.button_up:hover{
+	background-color: white;
+	box-shadow: 10px rgba(255, 255, 255, 0.5);
+}
+.flecha{
+	width: 100%;
+	transform: rotate(-90deg);
+}
+.up{
+	align-self: center;
+	justify-content: center;
+	height: 20px;
+	width: 20px;
+}
+
+/*----------------------Inputs--------------------*/
+
+.buscador{
+	display: flex;
+	justify-content: center;
+	aling-items: center;
+	margin: 10px;
+}
+input[type="text"], input[type="email"]{
+	border-radius: 5px;
+	border: 3px solid darkgray;
+	text-align: center;
+	font-size: 15px;
+	margin: 10px;
+	height: 25px;
+	width: auto;
+}
+#tipo_tarjeta{
+	border-radius: 5px;
+	border: 3px solid darkgray;
+	font-size: 15px;
+	margin: 10px;
+	height: 30px;
+}
+.submit{
+	border-radius: 5px;
+	border: 3px solid darkgray;
+	font-size: 15px;
+	margin: 10px;
+	height: 30px;
+	transition: all 0.4s ease;
+}
+.submit:hover{
+	border: 3px solid black;
+	background-color: rgb(200, 200, 200);
+	
+}

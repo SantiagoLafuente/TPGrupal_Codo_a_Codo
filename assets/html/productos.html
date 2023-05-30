@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/productos.css">
+	<link rel="stylesheet" href="../CSS/footer.css">
+	<link rel="stylesheet" href="../CSS/header.css">
+    <title>Productos</title>
+</head>
+<body>
+	<script type="text/javascript" src="../js/botones.js"></script>
+
+    <div class="nav" id="inicio">
+        <div class="nav__container container">
+            <a class="link" href="../../index.html">Inicio</a>
+            <a class="link" href="../html/nosotros.html">Sobre Nosotros</a>
+            <a class="link" href="../html/productos.html">Productos</a>
+            <a class="link" href="../html/formulario.html">Contacto</a>
+        </div>
+    </div>
+
+    
+	<!-----------------------Carrito------------------------->
+    <div class="container_carrito" id="carrito_de_compras">
+		<div class="button_carrito"id="carrito" onclick="abrir()">
+			<div class="carrito">
+				<img src="../img/carrito.png">
+			</div>
+		</div>
+	</div>
+	<main>
+		<h2 class="productos">PRODUCTOS</h2>
+		<div class="buscador">
+			<input type="text" id="buscador" placeholder="Buscar">
+		</div>
+		<!----------------Tarjetas con los Productos----------------->
+        <div class="container_tarjeta" id="tarjeta">
+			<div class="tarjeta">
+				<img src="../img/productos/producto1.jpg">
+				<p class="detalle" id="detalle">Prospekt`s March Vinyl - $<span class="precio">25.55</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto2.jpg">
+				<p class="detalle" id="detalle">Music of the Spheres Hat - $<span class="precio">33.05</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto3.jpg">
+				<p class="detalle" id="detalle">Mylo Xyloto Lithograph - $<span class="precio">35.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto4.jpg">
+				<p class="detalle" id="detalle">Everyone is an Alien Somewhere-Light Blue - $<span class="precio">40.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto5.jpg">
+				<p class="detalle" id="detalle">Everyone is an Alien Somewhere Hat - $<span class="precio">35.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto6.jpg">
+				<p class="detalle" id="detalle">Music of the Spheres Tourbook - $<span class="precio">25.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto7.jpg">
+				<p class="detalle" id="detalle">X&Y Lithograph - $<span class="precio">35.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto8.jpg">
+				<p class="detalle" id="detalle">Alien Radio Music of the Spheres World Tour 2023 - $<span class="precio">45.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto9.jpg">
+				<p class="detalle" id="detalle">Music of the Spheres Tour 2023 - $<span class="precio">45.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto10.jpg">
+				<p class="detalle" id="detalle">2022 World Tour 9 White - $<span class="precio">30.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto12.png">
+				<p class="detalle" id="detalle">Music of the Spheres - $<span class="precio">90.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto13.png">
+				<p class="detalle" id="detalle">Spectrum Crewneck Sweatshirt - $<span class="precio">55.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto14.png">
+				<p class="detalle" id="detalle">Everyday Life - $<span class="precio">30.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto15.png">
+				<p class="detalle" id="detalle">Music of the Spheres - $<span class="precio">30.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto16.png">
+				<p class="detalle" id="detalle">Band Photo Music of the Spheres World Tour - $<span class="precio">30.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto17.png">
+				<p class="detalle" id="detalle">Voltik - $<span class="precio">30.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto18.png">
+				<p class="detalle" id="detalle">Parachutes Lithograph - $<span class="precio">35.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto19.png">
+				<p class="detalle" id="detalle">Ghost Stories Lithograph - $<span class="precio">35.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto20.png">
+				<p class="detalle" id="detalle">Higher Power Lithograph - $<span class="precio">35.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto21.png">
+				<p class="detalle" id="detalle">Music of the Spheres Patch - $<span class="precio">6.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+			<div class="tarjeta">
+				<img src="../img/productos/producto22.png">
+				<p class="detalle" id="detalle">Everyone is an Alien Somewhere Bag- $<span class="precio">10.00</span></p>
+				<div class="container_agregar" id="agregar"><p class="agregar">Agregar</p></div>
+			</div>
+        </div>
+    </main>
+	<!---------------------Boton hacia arriba------------------->
+	<div class="container_button" id="button_up">
+		<a href="#inicio">
+		<div class="button_up">
+			<div class="up">
+				<img src="../img/flecha.png" class="flecha">
+			</div>
+		</div>
+		</a>
+	</div>
+	<!-------------------Ventana Emergente------------------->
+	
+	<div class="container_ventana" id="ventana">
+		<div class="ventana" id="suma_productos">
+			<div class="salir" id="cerrar" onclick="cerrar()">
+				<img src="../img/salir.png">
+			</div>
+			<div class="lista" id="lista_productos">
+			</div>
+			<hr>
+			<div class="resultado" id="resultado"></div>
+			
+			<form action="https://formsubmit.co/san.lafue@gmail.com" method="POST" id="formulario">
+				<label for="name">Nombre/s: <input type="text" id="nombre" placeholder="Juan" name="nombre"></label><br>
+				<label for="name">Apellido/s: <input type="text" id="apellido" placeholder="Perez" name="apellido"></label><br>
+				<label for="name">Email: <input type="email" id="email" placeholder="juanperez@gmail.com" name="email"></label><br>
+				<label for="name">Pais/Provincia: <input type="text" id="pais" placeholder="Argentina/Buenos Aires" name="pais"></label><br>
+				<label for="name">Dirección: <input type="text" id="direccion" placeholder="9 de julio, 1234" name="direccion"></label>
+				<label for="name">Piso: <input type="text" id="piso" placeholder="1A" name="piso"></label><br>
+				<label for="name">Tarjeta: 
+				<select id="tipo_tarjeta" name="tipo_tarjeta">
+					<option value="none">Ninguna</option>
+					<option value="Visa">Visa</option>
+					<option value="Mastercard">Mastercard</option>
+					<option value="Naranja">Naranja</option>
+					<option value="American Express">American Express</option>
+					<option value="Cabal">Cabal</option>
+				</section>
+				<input type="text" id="tajeta_num" name="tarjeta_num">
+				</label>
+				
+				<button class="submit" type="submit">Confirmar</button>
+				<input type="hidden" name="_captcha" value="false">
+			</form>
+		</div>
+	</div>
+	<footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__icons">
+
+                <a href="#" class="footer__icon fab fa-brands fa-facebook"></a>
+                <a href="#" class="footer__icon fab fa-brands fa-twitter"></a>
+                <a href="#" class="footer__icon fab fa-brands fa-instagram"></a>
+                <a href="#" class="footer__icon fab fa-brands fa-youtube"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/024b4cb82b.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/productos.js"></script>
+	<script src="https://sheetdb.io/handlebars.js"></script>
+</body>
+</html>
